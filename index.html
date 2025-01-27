@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no" />
+        <style>
+            * {
+                font-size: min(5vw, 5vh);
+                font-family: sans-serif;
+            }
+            
+            html {
+                width: 100%;
+                height: 100%;
+            }
+            
+            body {
+                width: 100%;
+                height: 100%;
+                overflow-x: hidden;
+            }
+            
+            .title {
+                font-weight: bold;
+                font-size: min(10vw, 10vh);
+                text-align: center;
+            }
+            
+            .upload-box {
+                margin: auto;
+                width: min(40vw, 40vh);
+                height: min(40vw, 40vh);
+                border: 4px dashed gray;
+                border-radius: min(5vw, 5vh);
+                margin-bottom: min(4vw, 4vh);
+            }
+            
+            .upload-section {
+                margin-top: min(4vw, 4vh);
+                display: block;
+            }
+            
+            #file {
+                width: min(40vw, 40vh);
+                height: min(40vw, 40vh);
+                opacity: 0;
+            }
+            
+            #file-name, #file-size {
+                text-align: center;
+            }
+            
+            #upload {
+                display: block;
+                margin-top: min(4vw, 4vh);
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+        <title>April's Digital Bag!</title>
+        <script defer src="script.js" type="module"></script>
+    </head>
+    <body>
+        <div class="title">Upload your files here!</div>
+        <div class="upload-section">
+            <div class="upload-box">
+                <input id="file" type="file"></input>
+            </div>
+            <div id="file-name">No file selected.</div>
+            <div id="file-size"></div>
+            <button id="upload">Upload!</button>
+        </div>
+    </body>
+</html>
